@@ -1,0 +1,8 @@
+type User @entity {
+  id: ID! # identityId
+  senderAddr: Bytes!
+  tokenAddr: Bytes!
+  tokenID: BigInt!
+
+  transactionHash: Bytes!
+}

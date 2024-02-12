@@ -1,0 +1,20 @@
+{
+  "name": "identity-subgraph",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Zero Block Global Foundation",
+  "description": "",
+  "scripts": {
+    "install": "npx husky install",
+    "lint-fix": "npm run lint-ts-fix && npm run lint-ql-fix && npm run lint-json-fix && npm run lint-yaml-fix",
+    "lint-json-fix": "prettier --write \"./[a-zA-Z0-9.]+(?!-lock).json\"",
+    "lint-yaml-fix": "prettier --write \"./**/*.yaml\"",
+    "lint-ql-fix": "prettier --write \"./**/*.graphql\"",
+    "lint-ts-fix": "prettier --write \"./**/*.ts\""
+  },
+  "dependencies": {
+    "@graphprotocol/graph-ts": "^0.32.0",
+    "husky": "^8.0.3",
+    "prettier": "^3.0.1"
+  }
+}
